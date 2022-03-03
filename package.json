@@ -55,6 +55,20 @@
     "serve": "npx serve --cors -p 8080"
   },
   "author": "Truestamp <support@truestamp.com> (https://www.truestamp.com)",
+  "contributors": [
+    {
+      "name": "Truestamp Inc.",
+      "url": "https://www.truestamp.com"
+    },
+    {
+      "name": "cyberphone",
+      "url": "https://github.com/cyberphone/json-canonicalization"
+    },
+    {
+      "name": "erdtman",
+      "url": "https://github.com/erdtman/canonicalize"
+    }
+  ],
   "license": "MIT",
   "files": [
     "dist"
