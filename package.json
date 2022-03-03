@@ -30,13 +30,13 @@
     "Node.js",
     "Browser"
   ],
-  "source": "src/index.ts",
+  "source": "mod.ts",
   "main": "dist/canonify.cjs",
   "umd:main": "dist/canonify.umd.js",
   "module": "./dist/canonify.module.js",
   "unpkg": "./dist/canonify.umd.js",
   "jsdelivr": "./dist/canonify.umd.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/mod.d.ts",
   "exports": {
     "require": "./dist/canonify.cjs",
     "import": "./dist/canonify.module.js",

@@ -3,7 +3,7 @@ import fs from 'fs';
 import toHex from 'to-hex'
 const BN = require('bn.js')
 
-import canonify from '../src/index'
+import canonify from '../mod'
 
 test('arrays', () => {
   const input = jsonfile.readFileSync('tests/testdata/input/arrays.json');

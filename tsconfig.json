@@ -8,6 +8,7 @@
     "esModuleInterop": true,
   },
   "include": [
+    "mod.ts",
     "src/**/*"
   ],
   "exclude": [
