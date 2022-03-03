@@ -6,19 +6,32 @@
 
 // Load latest ES Module from SkyPack. You should really use a pinned URL!
 // See : https://docs.skypack.dev/skypack-cdn/code/optimize-for-production
-// import Truestamp from "https://cdn.skypack.dev/@truestamp/canonify?dts"
+import canonify from "https://cdn.skypack.dev/@truestamp/canonify?dts"
 
 // Or, load from local lib in development
-import canonify from "../../dist/canonify.module.js"
+// import canonify from "../../dist/canonify.module.js"
 
-const json = [
-  56,
-  {
-    "d": true,
-    "10": null,
-    "1": []
-  }
-]
+const example = {
+  big: BigInt(42).toString(),
+  f: false,
+  fun: () => { },
+  n: null,
+  num: 42,
+  s: "string",
+  sym: Symbol("hello"),
+  t: true,
+  u: undefined,
+  a: [
+    undefined,
+    null,
+    true,
+    false,
+    "foo",
+    42,
+    BigInt(42).toString(),
+    Symbol("hello"),
+    () => { },
+  ],
+}
 
-console.log(canonify(json));
-// [56,{"1":[],"10":null,"d":true}]
+console.log(canonify(example));

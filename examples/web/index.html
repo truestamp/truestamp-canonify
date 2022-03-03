@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Truestamp Canonify Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>Truestamp Canonify Example</h1>
+
+    <p>
+      An example page using the Truestamp JS UMD build. You can see a simpler
+      alternative example that utilizes the SkyPack ES Module build in the
+      <a href="/examples/web/skypack.html">skypack.html</a> file.
+    </p>
+
+    <!-- AlpineJS gives us some easy interactivity -->
+    <!-- See : https://github.com/alpinejs/alpine/ -->
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    <!-- TRUESTAMP : Choose One of these loading methods and comment out the others -->
+
+    <!-- load locally for dev -->
+    <!-- <script src="../../dist/canonify.umd.js"></script> -->
+
+    <!-- load from JSDELIVR CDN latest (using latest not recommended for production use, pin a version) -->
+    <!-- See : https://www.jsdelivr.com/package/npm/@truestamp/canonify -->
+    <script src="https://cdn.jsdelivr.net/npm/@truestamp/canonify@latest/dist/canonify.umd.min.js"></script>
+
+    <!-- load from UNPKG CDN latest (using latest not recommended for production use, pin a version) -->
+    <!-- See : https://unpkg.com/browse/@truestamp/canonify/ -->
+    <!-- <script src="https://unpkg.com/@truestamp/canonify"></script> -->
+
+    <!-- NO EDITING BELOW HERE IS REQUIRED -->
+
+    <div
+      x-data='{example: { big: BigInt(42).toString(), f: false, fun: () => { }, n: null, num: 42, s: "string", sym: Symbol("hello"), t: true, u: undefined, a: [undefined, null, true, false, "foo", 42, BigInt(42).toString(), Symbol("hello"), () => { }] }}'
+    >
+      <h2>Canonify Example</h2>
+
+      <div>
+        <h3>Raw Object</h3>
+        <pre>
+        <code>{ big: BigInt(42).toString(), f: false, fun: () => { }, n: null, num: 42, s: "string", sym: Symbol("hello"), t: true, u: undefined, a: [undefined, null, true, false, "foo", 42, BigInt(42).toString(), Symbol("hello"), () => { }] }</code>
+        </pre>
+
+        <h3>JSON.stringify()</h3>
+        <pre><code x-text="JSON.stringify(example, null, 2)"></code></pre>
+        <h3>canonify()</h3>
+        <pre><code x-text="canonify(example)"></code></pre>
+      </div>
+    </div>
+  </body>
+</html>
