@@ -67,19 +67,17 @@ and TypeScript that uses V8 and is built in Rust.
 
 #### Setup Deno
 
-Import the `@truestamp/canonify` ESM module in your project using the
-[SkyPack](https://www.skypack.dev) CDN.
+Recent versions of `canonify` are published to the official Deno third party modules CDN.
 
-SkyPack Package Info
-
-[https://www.skypack.dev/view/@truestamp/canonify](https://www.skypack.dev/view/@truestamp/canonify)
-
-It is recommended to used a [pinned version](https://docs.skypack.dev/skypack-cdn/code/optimize-for-production) of the library when using SkyPack in production. Also, note the `?dts` suffix on the URL to get the [SkyPack Automatic TypeScript Declarations](https://docs.skypack.dev/skypack-cdn/code/deno) for Deno.
+<https://deno.land/x/canonify>
 
 #### Deno Example
 
 ```typescript
-import canonify from "https://cdn.skypack.dev/@truestamp/canonify?dts"
+// IMPORTANT : use the current release version of `canonify`
+// in the module URL. Replace `@v1.0.1` with the latest version.
+// Versions are tied to GitHub release tags.
+import canonify from "https://deno.land/x/canonify@v1.0.1/mod.ts";
 
 const example = {
   big: BigInt(42).toString(),
