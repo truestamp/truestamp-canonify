@@ -1,0 +1,73 @@
+{
+  "name": "@truestamp/canonify",
+  "version": "0.0.1",
+  "description": "A tiny JSON canonicalize function written in Typescript. Creates crypto safe predictable canonicalization of JSON as defined by RFC8785 and is usable in Deno, Node.js, and browsers.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/truestamp/truestamp-canonify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/truestamp/truestamp-canonify/issues"
+  },
+  "homepage": "https://github.com/truestamp/truestamp-canonify",
+  "keywords": [
+    "Truestamp",
+    "JavaScript",
+    "TypeScript",
+    "JSON",
+    "Cryptography",
+    "Canonicalization",
+    "Canonicalize",
+    "Canonical",
+    "RFC8785",
+    "Signature",
+    "Universal",
+    "ES Modules",
+    "UMD",
+    "CommonJS",
+    "Deno",
+    "Node.js",
+    "Browser"
+  ],
+  "source": "src/canonify.ts",
+  "main": "dist/index.cjs",
+  "umd:main": "dist/index.umd.js",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "jsdelivr": "./dist/index.umd.js",
+  "types": "./dist/canonify.d.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "package-check": "npx package-check",
+    "build:web": "microbundle --target=web --tsconfig tsconfig.json --format es,umd,modern",
+    "build:node": "microbundle --target=node --tsconfig tsconfig.json --format cjs",
+    "build": "npm run package-check && npm run clean && npm run build:web && npm run build:node",
+    "dev": "microbundle watch",
+    "test": "jest --coverage --no-cache",
+    "test:watch": "jest --watch"
+  },
+  "author": "Truestamp <support@truestamp.com> (https://www.truestamp.com)",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@skypack/package-check": "^0.2.2",
+    "@types/jest": "^27.4.1",
+    "@types/jsonfile": "^6.1.0",
+    "big.js": "^6.1.1",
+    "bignumber.js": "^9.0.0",
+    "bn.js": "^5.2.0",
+    "jest": "^27.5.1",
+    "jsonfile": "^6.1.0",
+    "microbundle": "^0.14.2",
+    "rimraf": "^3.0.2",
+    "to-hex": "^0.0.17",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.6.2"
+  }
+}
