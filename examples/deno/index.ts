@@ -9,7 +9,7 @@
 // import Truestamp from "https://cdn.skypack.dev/@truestamp/canonify?dts"
 
 // Or, load from local lib in development
-import canonify from "../../dist/index.module.js"
+import canonify from "../../dist/canonify.module.js"
 
 const json = [
   56,

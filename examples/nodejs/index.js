@@ -3,7 +3,7 @@
 // $ npm install
 // $ node index.ts
 
-const canonify = require('../../dist/index.js');
+const canonify = require('../../dist/canonify.cjs');
 
 const json = [
   56,
