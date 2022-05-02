@@ -105,6 +105,10 @@ const example = {
 console.log(canonify(example));
 ```
 
+## API Documentation
+
+The [TypeScript API documentation](https://truestamp.github.io/truestamp-canonify/) for this project is generated and published upon each new release.
+
 ## Testing
 
 This library aims to maintain 100% code test coverage and it passes 100% of the test

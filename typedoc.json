@@ -1,0 +1,12 @@
+{
+  "entryPoints": ["mod.ts"],
+  "out": "docs",
+  "includeVersion": true,
+  "hideGenerator": true,
+  "readme": "README.md",
+  "customTitle": "github.com/truestamp/truestamp-canonify",
+  "customTitleLink": "https://github.com/truestamp/truestamp-canonify",
+  "footerTypedocVersion": false,
+  "footerDate": false,
+  "footerTime": false
+}
