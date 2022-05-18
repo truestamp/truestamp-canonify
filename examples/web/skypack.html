@@ -2,23 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Truestamp Canonify Example (SkyPack)</title>
+    <title>Truestamp Canonify Example (ES Modules via SkyPack)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <h1>Truestamp Canonify Example (SkyPack)</h1>
+    <h1>Truestamp Canonify Example (ES Modules via SkyPack)</h1>
 
     <p>See browser console for output</p>
 
     <p>
-      An example app using the SkyPack ES Module build. Return to the Alpine.js
-      and Truestamp JS UMD build
+      An example app using the ES Module build. Return to the Alpine.js
+      and Truestamp JS IIFE build
       <a href="/examples/web/index.html">here</a>.
     </p>
 
+    <!-- See : https://exploringjs.com/es6/ch_modules.html#_modules -->
     <script type="module">
       // ES Module import
-      import canonify from "https://cdn.skypack.dev/@truestamp/canonify"
+      // import { canonify } from "https://cdn.skypack.dev/@truestamp/canonify"
+      import { canonify } from "../../lib/index.mjs"
 
       async function main() {
         const example = {

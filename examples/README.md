@@ -27,4 +27,4 @@ node index.js
 
 To test out the browser examples locally you'll need a simple HTTP server that supports CORS. An easy local server to try without any installation is '[serve](https://github.com/vercel/serve)'. You can try it out by running `npm run serve` from the root directory of this repository (not the examples/ directory).
 
-Once the server is running open [http://127.0.0.1:8080/examples/web](http://127.0.0.1:8080/examples/web) in your browser. This example code implements a demo app the utilizes [alpine.js](https://github.com/alpinejs/alpine/) and the UMD build to provide some interactivity, and a simpler example using ES Modules.
+Once the server is running open [http://127.0.0.1:8080/examples/web](http://127.0.0.1:8080/examples/web) in your browser. This example code implements a demo app the utilizes [alpine.js](https://github.com/alpinejs/alpine/) and the IIFE build to provide some interactivity, and a simpler example using ES Modules.

@@ -3,7 +3,7 @@
 ## Description
 
 A tiny zero-dependency JSON canonicalization library written in Typescript that supports ES
-Modules, UMD, and CommonJS loaders and runs in Deno, Node.js, and modern browsers.
+Modules, IIFE, and CommonJS loaders and runs in Deno, Node.js, and modern browsers.
 
 Canonicalization of JavaScript/TypeScript data structures to a standard and deterministically ordered output can be very useful for hashing and signing complex nested structures where the ordering is unknown.
 
@@ -32,7 +32,7 @@ Require the `@truestamp/canonify` CommonJS module in your project.
 #### Node.js Example
 
 ```js
-const canonify = require('@truestamp/canonify');
+const { canonify } = require('@truestamp/canonify');
 
 const example = {
   big: BigInt(42).toString(),
@@ -77,7 +77,7 @@ Recent versions of `canonify` are published to the official Deno third party mod
 // IMPORTANT : use the current release version of `canonify`
 // in the module URL. Replace `@v1.0.1` with the latest version.
 // Versions are tied to GitHub release tags.
-import canonify from "https://deno.land/x/canonify@v1.0.1/mod.ts";
+import { canonify } from "https://deno.land/x/canonify@v1.0.1/mod.ts";
 
 const example = {
   big: BigInt(42).toString(),

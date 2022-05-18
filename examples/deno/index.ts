@@ -4,16 +4,17 @@
 // $ deno run examples/deno/index.ts
 // $ deno run index.ts
 
-// Load the module from deno.land/x/canonify
+// Load from local lib in development
+import { canonify } from "../../lib/index.mjs"
+// import { canonify } from "../../mod.ts"
+
+// Or, Load the module from deno.land/x/canonify
 // @ts-ignore-next-line
-import canonify from "https://deno.land/x/canonify@v1.0.1/mod.ts";
+// import canonify from "https://deno.land/x/canonify@v1.0.1/mod.ts";
 
 // Or, load latest ES Module from SkyPack. You should really use a pinned URL!
 // See : https://docs.skypack.dev/skypack-cdn/code/optimize-for-production
 // import canonify from "https://cdn.skypack.dev/@truestamp/canonify?dts";
-
-// Or, load from local lib in development
-// import canonify from "../../dist/canonify.module.js"
 
 const example = {
   big: BigInt(42).toString(),

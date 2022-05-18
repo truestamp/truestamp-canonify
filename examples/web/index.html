@@ -9,24 +9,25 @@
     <h1>Truestamp Canonify Example</h1>
 
     <p>
-      An example page using the Truestamp JS UMD build. You can see a simpler
-      alternative example that utilizes the SkyPack ES Module build in the
+      An example page using the Truestamp JS IIFE build. You can see a simpler
+      alternative example that utilizes ES6 modules in the browser, delivered via
+      SkyPack in the
       <a href="/examples/web/skypack.html">skypack.html</a> file.
     </p>
 
     <!-- AlpineJS gives us some easy interactivity -->
     <!-- See : https://github.com/alpinejs/alpine/ -->
 
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
 
     <!-- TRUESTAMP : Choose One of these loading methods and comment out the others -->
 
     <!-- load locally for dev -->
-    <!-- <script src="../../dist/canonify.umd.js"></script> -->
+    <script src="../../lib/index.iife.js"></script>
 
     <!-- load from JSDELIVR CDN latest (using latest not recommended for production use, pin a version) -->
     <!-- See : https://www.jsdelivr.com/package/npm/@truestamp/canonify -->
-    <script src="https://cdn.jsdelivr.net/npm/@truestamp/canonify@latest/dist/canonify.umd.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@truestamp/canonify@latest/dist/canonify.umd.min.js"></script> -->
 
     <!-- load from UNPKG CDN latest (using latest not recommended for production use, pin a version) -->
     <!-- See : https://unpkg.com/browse/@truestamp/canonify/ -->
@@ -46,9 +47,12 @@
         </pre>
 
         <h3>JSON.stringify()</h3>
+        <p>The results of passing the raw sample through JSON.stringify()</p>
         <pre><code x-text="JSON.stringify(example, null, 2)"></code></pre>
-        <h3>canonify()</h3>
-        <pre><code x-text="canonify(example)"></code></pre>
+
+        <h3>Global function : truestamp.canonify() of the raw sample</h3>
+        <p>You can see the change in the ordering to a canonical form, the removal of newlines and extra spaces, as well as changing JSON non-serializable entities (e.g. Symbol()) to undefined.</p>
+        <pre><code x-text="truestamp.canonify(example)"></code></pre>
       </div>
     </div>
   </body>

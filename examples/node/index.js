@@ -1,13 +1,8 @@
-// Usage:
-// $ cd examples/nodejs
-// $ npm install
-// $ node index.ts
+// Usage (from root of repository):
+// $ npm run build
+// $ node examples/node/index.js
 
-// Use Local version (dev)
-// const canonify = require('../../dist/canonify.cjs');
-
-// Use Published version
-const canonify = require('@truestamp/canonify');
+const { canonify } = require('../../lib/index.cjs');
 
 const example = {
   big: BigInt(42).toString(),

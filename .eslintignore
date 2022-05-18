@@ -3,4 +3,9 @@ dist
 tests
 jest.config.mjs
 examples/deno/index.ts
+examples/node/index.js
 perf.js
+lib
+esbuild.node.cjs
+esbuild.module.cjs
+esbuild.iife.cjs

@@ -1,4 +1,4 @@
-import canonify from '../mod'
+import { canonify } from '../src/index'
 
 describe('serializing', () => {
   describe('should behave like JSON.stringify() for', () => {

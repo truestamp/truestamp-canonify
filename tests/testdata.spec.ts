@@ -1,9 +1,8 @@
 import jsonfile from 'jsonfile';
 import fs from 'fs';
 import toHex from 'to-hex'
-const BN = require('bn.js')
 
-import canonify from '../mod'
+import { canonify } from '../src/index'
 
 test('arrays', () => {
   const input = jsonfile.readFileSync('tests/testdata/input/arrays.json');
