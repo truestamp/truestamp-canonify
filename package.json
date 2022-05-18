@@ -1,7 +1,7 @@
 {
   "name": "@truestamp/canonify",
   "type": "module",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A tiny JSON canonicalize function written in Typescript. Creates crypto safe predictable canonicalization of JSON as defined by RFC8785 and is usable in Deno, Node.js, and browsers.",
   "repository": {
     "type": "git",
