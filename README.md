@@ -75,9 +75,9 @@ Recent versions of `canonify` are published to the official Deno third party mod
 
 ```typescript
 // IMPORTANT : use the current release version of `canonify`
-// in the module URL. Replace `@v1.0.1` with the latest version.
+// in the module URL. Replace `@v1.1.1` with the latest version.
 // Versions are tied to GitHub release tags.
-import { canonify } from "https://deno.land/x/canonify@v1.0.1/mod.ts";
+import { canonify } from "https://deno.land/x/canonify@v1.1.1/mod.ts";
 
 const example = {
   big: BigInt(42).toString(),
