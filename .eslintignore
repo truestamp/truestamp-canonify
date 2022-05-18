@@ -1,8 +1,9 @@
 node_modules
 tests
 jest.config.mjs
-examples/deno/index.ts
-examples/node/index.js
+examples/**/*.cjs
+examples/**/*.ts
+examples/**/*.js
 perf.js
 lib
 esbuild.node.cjs

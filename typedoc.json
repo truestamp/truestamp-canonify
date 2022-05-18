@@ -1,5 +1,5 @@
 {
-  "entryPoints": ["mod.ts"],
+  "entryPoints": ["src/index.ts"],
   "out": "docs",
   "includeVersion": true,
   "hideGenerator": true,
