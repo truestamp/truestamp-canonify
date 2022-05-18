@@ -1,15 +1,14 @@
 // A simplistic Deno example of using the functions of the Canonify client.
 
 // Usage:
-// $ deno run examples/deno/index.ts
-// $ deno run index.ts
+//   npm run build (in the root of the repository)
+//   deno run examples/deno/index.ts
 
 // Load from local lib in development
 // import { canonify } from "../../lib/index.mjs"
 import { canonify } from "../../mod.ts"
 
 // Or, Load the module from deno.land/x/canonify
-// @ts-ignore-next-line
 // import { canonify } from "https://deno.land/x/canonify@v1.1.1/mod.ts";
 
 // Or, load latest ES Module from SkyPack. You should really use a pinned URL!
