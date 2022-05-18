@@ -1,4 +1,4 @@
 coverage/
 tests/
-jest.config.js
+jest.config.mjs
 tsconfig.json
