@@ -31,7 +31,16 @@
     "Browser"
   ],
   "files": [
-    "lib"
+    "README.md",
+    "SECURITY.md",
+    "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
+    "LICENSE.txt",
+    "package.json",
+    "mod.ts",
+    "/src/index.ts",
+    "/lib",
+    "/examples"
   ],
   "source": "src/index.ts",
   "types": "lib/index.d.ts",
