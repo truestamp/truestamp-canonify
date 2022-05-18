@@ -38,7 +38,7 @@
     "LICENSE.txt",
     "package.json",
     "mod.ts",
-    "/src/index.ts",
+    "/src",
     "/lib",
     "/examples"
   ],
