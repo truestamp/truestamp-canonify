@@ -8,12 +8,17 @@
 // import { canonify } from "../../lib/index.mjs"
 import { canonify } from "../../mod.ts"
 
-// Or, Load the module from deno.land/x/canonify
-// import { canonify } from "https://deno.land/x/canonify@v1.1.1/mod.ts";
-
-// Or, load latest ES Module from SkyPack. You should really use a pinned URL!
+// OK : load latest ES Module from SkyPack. You should really use a pinned URL!
 // See : https://docs.skypack.dev/skypack-cdn/code/optimize-for-production
 // import { canonify } from "https://cdn.skypack.dev/@truestamp/canonify@1.1.1?dts";
+
+// OK : load latest ES Module from esm.sh.
+// See : https://esm.sh/
+// See : https://esm.sh/@truestamp/tree
+// import { canonify } from "https://esm.sh/@truestamp/canonify?target=deno"
+
+// OK : Load the module from deno.land/x/canonify
+// import { canonify } from "https://deno.land/x/canonify@v1.1.1/mod.ts";
 
 const example = {
   big: BigInt(42).toString(),

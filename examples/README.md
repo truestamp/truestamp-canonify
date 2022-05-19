@@ -4,20 +4,22 @@ Simple examples demonstrating usage in Node.js, Deno, and browsers.
 
 ## Deno
 
-The `deno/index.ts` file demonstrates simple usage. The source code can be modified to `import` the library from a local build or from a CDN.
+The `deno/index.ts` file demonstrates simple usage. The source code shows how to `import` the library from a local build or from a CDN.
 
 You'll need to first install [Deno](https://deno.land/)
 
 ```sh
+npm run build
 cd examples/deno
 deno run index.ts
 ```
 
 ## Node.js
 
-The `node/index.js` file demonstrates some simple usage. The source code can be modified to `require` the library from a local build or from [npmjs.com/package/@truestamp/canonify](https://www.npmjs.com/package/@truestamp/canonify).
+The `node/index.js` file demonstrates some simple usage. The source code shows how to `require` the library from a local build or from [npmjs.com/package/@truestamp/canonify](https://www.npmjs.com/package/@truestamp/canonify).
 
 ```sh
+npm run build
 cd examples/node
 npm install
 node index.js
