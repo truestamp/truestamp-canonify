@@ -2,6 +2,22 @@
   "name": "@truestamp/canonify",
   "type": "module",
   "version": "1.1.1",
+  "author": "Truestamp <support@truestamp.com> (https://www.truestamp.com)",
+  "contributors": [
+    {
+      "name": "Truestamp Inc.",
+      "url": "https://www.truestamp.com"
+    },
+    {
+      "name": "cyberphone",
+      "url": "https://github.com/cyberphone/json-canonicalization"
+    },
+    {
+      "name": "erdtman",
+      "url": "https://github.com/erdtman/canonicalize"
+    }
+  ],
+  "license": "MIT",
   "description": "A tiny JSON canonicalize function written in Typescript. Creates crypto safe predictable canonicalization of JSON as defined by RFC8785 and is usable in Deno, Node.js, and browsers.",
   "repository": {
     "type": "git",
@@ -68,34 +84,18 @@
     "esbuild-node": "node ./esbuild.node.cjs",
     "build": "npm run package-check && npm run clean && npm run esbuild-module && npm run esbuild-node && npm run esbuild-iife && npm run ts-types"
   },
-  "author": "Truestamp <support@truestamp.com> (https://www.truestamp.com)",
-  "contributors": [
-    {
-      "name": "Truestamp Inc.",
-      "url": "https://www.truestamp.com"
-    },
-    {
-      "name": "cyberphone",
-      "url": "https://github.com/cyberphone/json-canonicalization"
-    },
-    {
-      "name": "erdtman",
-      "url": "https://github.com/erdtman/canonicalize"
-    }
-  ],
-  "license": "MIT",
   "devDependencies": {
     "@compodoc/live-server": "^1.2.3",
     "@skypack/package-check": "^0.2.2",
     "@types/jest": "^27.5.1",
     "@types/jsonfile": "^6.1.0",
-    "@typescript-eslint/eslint-plugin": "^5.25.0",
-    "@typescript-eslint/parser": "^5.25.0",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
     "big.js": "^6.1.1",
     "bignumber.js": "^9.0.2",
-    "bn.js": "^5.2.0",
-    "esbuild": "^0.14.39",
-    "eslint": "^8.15.0",
+    "bn.js": "^5.2.1",
+    "esbuild": "^0.14.40",
+    "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.26.0",
@@ -106,7 +106,7 @@
     "rimraf": "^3.0.2",
     "serve": "^13.0.2",
     "to-hex": "^0.0.18",
-    "ts-jest": "^28.0.2",
+    "ts-jest": "^28.0.3",
     "typedoc": "^0.22.15",
     "typedoc-plugin-extras": "^2.2.3",
     "typescript": "^4.6.4"
